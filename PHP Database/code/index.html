@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffeine Kick</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+<header class="header">
+
+<a href="#" class="logo">
+    <img src="logo.png" alt="">
+</a>
+
+<nav class="navbar">
+
+<ul>
+    <li><a class="main" href="#home">home</a></li>
+    <li><a class="main" href="#menu">menu &#9660;</a>
+            <ul class="dropdown">
+                <li><a class="sub" href="#icedespresso">iced espresso</a></li>
+                <li><a class="sub" href="#milkybased">iced milky based</a></li>
+                <li><a class="sub" href="#caffeine">caffeine picks</a></li>
+            </ul>
+    </li>
+    <li><a class="main" href="#contact">contacts</a></li>
+    <li><a class="main" href="#about">about us</a></li>
+</nav>
+</ul>
+
+<div class="icons">
+    <div class="fas fa-user" id="login-btn"></div>
+    <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    <div class="fas fa-bars" id="menu-btn"></div>
+</div>
+
+<div class="search-form">
+    <input type="search" id="search-box" placeholder="Search here...">
+    <label for="search-box" class="fas fa-search"></label>
+</div>
+
+<div class="cart-items-container">
+    <button id="checkout-now-btn">Checkout Now</button>
+</div>
+
+</header>
+
+<section class="home" id="home">
+
+<div class="content">
+    <h3>We're happy to supply your caffeine needs.</h3>
+    <a href="#icedespresso" class="btn">get yours now</a>
+</div>
+
+</section>
+
+<section class="menu" id="menu" >
+
+<h1 class="heading"> our <span>menu</span> </h1>
+
+
+<section class="icedespresso" id="icedespresso">
+<h1 class="iced">iced espresso</h1>
+<div class="box-container">
+
+<div class="box">
+        <img src="americano.png" alt="">
+        <h3>americano</h3>
+        <button class="details-btn" onclick="showProductDetails('americano', 'A classic espresso-based drink, diluted with cold water for a clean, bold flavor.', 'americano.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+            Add to Cart
+          </button>
+</div>
+
+<div class="box">
+        <img src="caramel and salted.png" alt="">
+        <h3>caramel latte</h3>
+        <button class="details-btn" onclick="showProductDetails('Caramel Latte', 'A creamy latte topped with a sweet caramel drizzle.', 'caramel and salted.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+            Add to Cart
+        </button>
+</div>
+
+<div class="box">
+    <img src="vanilla and cafe latte.png" alt="">
+    <h3>vanilla latte</h3>
+    <button class="details-btn" onclick="showProductDetails('vanilla latte', 'A smooth latte infused with vanilla syrup for a subtle sweetness.', 'vanilla and cafe latte.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+    </button>
+</div>
+
+<div class="box">
+    <img src="spanish latte.png" alt="">
+    <h3>spanish latte</h3>
+    <button class="details-btn" onclick="showProductDetails('spanish latte', 'A creamy latte with a touch of condensed milk for a sweeter and richer flavor.', 'spanish latte.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+    </button>
+</div>
+
+<div class="box">
+    <img src="vanilla and cafe latte.png" alt="">
+    <h3>cafe latte</h3>
+    <button class="details-btn" onclick="showProductDetails('cafe latte', 'A classic latte made with espresso and steamed milk.', 'vanilla and cafe latte.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+    </button>
+</div>
+
+<div class="box">
+    <img src="caramel and salted.png" alt="">
+    <h3>salted caramel</h3>
+    <button class="details-btn" onclick="showProductDetails('salted caramel', 'A rich caramel latte with a hint of salt for a balanced sweetness.', 'caramel and salted.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+    </button>
+</div>
+
+<div class="box">
+        <img src="cafe mocha.png" alt="">
+        <h3>cafe mocha</h3>
+        <button class="details-btn" onclick="showProductDetails('cafe mocha', 'A decadent latte with chocolate syrup and whipped cream.', 'cafe mocha.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+            Add to Cart
+        </button>
+</div>
+
+<div class="box">
+    <img src="dirty matcha.png" alt="">
+    <h3>dirty matcha</h3>
+    <button class="details-btn" onclick="showProductDetails('dirty matcha', 'A matcha latte with a shot of espresso added to the bottom for a bold flavor.', 'dirty matcha.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+    </button>
+</div>
+
+</div>
+</section>
+
+<section class="milkybased" id="milkybased">
+    <h1 class="non">Iced Milky Based</h1>
+    <div class="box-container">
+      <div class="box">
+        <img src="milky strawberry.png" alt="">
+        <h3>Strawberry</h3>
+        <button class="details-btn" onclick="showProductDetails('strawberry', 'A refreshing blend of strawberry syrup, milk, and ice.', 'milky strawberry.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+          Add to Cart
+        </button>
+      </div>
+  
+      <div class="box">
+        <img src="milky chocolate.png" alt="">
+        <h3>Chocolate</h3>
+        <button class="details-btn" onclick="showProductDetails('chocolate', 'A classic chocolate milk drink.', 'milky chocolate.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+          Add to Cart
+        </button>
+      </div>
+  
+      <div class="box">
+        <img src="milky matcha.png" alt="">
+        <h3>Matcha</h3>
+        <button class="details-btn" onclick="showProductDetails('matcha', 'A creamy matcha latte with milk.', 'milky matcha.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+          Add to Cart
+        </button>
+      </div>
+  
+      <div class="box">
+        <img src="matcha strawberry.png" alt="">
+        <h3>Matcha-Berry</h3>
+        <button class="details-btn" onclick="showProductDetails('matcha-berry', 'A matcha latte with a fruity berry twist.', 'matcha strawberry.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+          Add to Cart
+        </button>
+      </div>
+  
+      <div class="box">
+        <img src="choco strawberry.png" alt="">
+        <h3>Choco-Berry</h3>
+        <button class="details-btn" onclick="showProductDetails('choco-berry', 'A chocolate milk drink with a berry flavor.', 'choco strawberry.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+<section class="caffeinekick" id="caffeine">
+<h1 class="caffeine">caffeine picks</h1>
+<div class="box-container">
+
+<div class="box">
+    <img src="waffle.png" alt="">
+    <h3>waffles</h3>
+    <button class="details-btn" onclick="showProductDetails('waffle', 'A classic golden-brown waffle, crisp on the outside and fluffy on the inside, served with your choice of toppings', 'waffle.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+      </button>
+</div>
+
+<div class="box">
+    <img src="mini donut.png" alt="">
+    <h3>mini donuts 9pcs</h3>
+    <button class="details-btn" onclick="showProductDetails('mini donut', 'Bite-sized donuts, light and fluffy, coated in sugar or glazed to perfection for a sweet treat.', 'mini donut.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+      </button>
+</div>
+
+<div class="box">
+    <img src="croffle.png" alt="">
+    <h3>croffles</h3>
+    <button class="details-btn" onclick="showProductDetails('croffle', 'A delicious blend of a croissant and waffle, combining buttery layers with a crispy texture.', 'croffle.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+      </button>
+</div>
+
+<div class="box">
+    <img src="cookies.png" alt="">
+    <h3>cookies</h3>
+    <button class="details-btn" onclick="showProductDetails('cookies', 'Freshly baked cookies, soft in the center and loaded with chocolate chips or other tasty add-ins.', 'cookies.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+      </button>
+</div>
+
+<div class="box">
+    <img src="carbonara.png" alt="">
+    <h3>carbonara</h3>
+    <button class="details-btn" onclick="showProductDetails('carbonara', 'A creamy pasta dish made with a rich sauce of eggs, cheese, and pancetta, topped with freshly cracked pepper.', 'carbonara.png', ['₱54 - 12oz', '₱60 - 16oz', '₱80 - 22oz'])">
+        Add to Cart
+      </button>
+</div>
+</section>
+
+<!-- Taste Finder Widget -->
+<div id="taste-finder-widget" class="taste-finder-widget minimized">
+    <div class="widget-header">
+        <div class="widgetlogo">
+            <img src="logo1.jpg" alt="Logo">
+            <span><i>Taste Finder</i></span>
+        </div>
+        <button class="minimize-btn" onclick="toggleWidget()">+</button>
+    </div>
+    <div class="widget-content" id="widget-content">
+        <br>
+        <p> How do you like your coffee?</p>
+        <br>
+        <div class="slider-group">
+            <label for="sweetness">Sweetness</label>
+            <input type="range" id="sweetness" min="0" max="3" step="1">
+            <div class="percentage-labels">
+                <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+        <div class="slider-group">
+            <label for="bitterness">Bitterness</label>
+            <input type="range" id="bitterness" min="0" max="3" step="1">
+            <div class="percentage-labels">
+                <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+        <div class="slider-group">
+            <label for="creaminess">Creaminess</label>
+            <input type="range" id="creaminess" min="0" max="3" step="1">
+            <div class="percentage-labels">
+                <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+        <div class="slider-group">
+            <label for="boldness">Boldness</label>
+            <input type="range" id="boldness" min="0" max="3" step="1">
+            <div class="percentage-labels">
+                <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+        <div class="slider-group">
+            <label for="mildness">Mildness</label>
+            <input type="range" id="mildness" min="0" max="3" step="1">
+            <div class="percentage-labels">
+                <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+            </div>
+        </div>
+        <button class="find-coffee-btn" onclick="recommendCoffee()">Find Coffee</button>
+        <button class="reset-btn" id="reset-button">Reset</button>
+    </div>
+</div>
+
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading"><span>contact</span> us </h1>
+
+    <div class="row">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6878.1948607539925!2d120.892553424228!3d14.363921569430612!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33962d4bbfe150e7%3A0x3661bfa9b35e1b45!2sCaffeine%20Kick!5e1!3m2!1sen!2sph!4v1728358458394!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <form action="">
+            <h3>Subscribe to our Newsletter</h3>
+            <div class="inputBox"> 
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="Email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="Number" placeholder="Number">
+            </div>
+            <input type="submit" value="Register" class="btn">
+        </form>
+    </div>
+</section>
+
+<section class="footer" id="about">
+
+    <div class="share">
+        <a href="https://www.facebook.com/profile.php?id=61554865228950&mibextid=ZbWKwL" 
+           target="_blank" class="fab fa-facebook-f"></a>
+        
+        <a href="https://www.instagram.com/caffeinekick.04" 
+           target="_blank" class="fa-brands fa-instagram"></a>
+        
+        <a href="https://www.tiktok.com/@caffeine.kick" 
+           target="_blank" class="fa-brands fa-tiktok"></a>
+    </div>
+
+    <div class="links">
+        <a class="main" href="#home">home</a>
+        <a class="main" href="#menu">menu</a>
+        <a class="main" href="#contact">contacts</a>
+        <a class="main" href="#about">about us</a>
+    </div>
+
+    <div class="end">POWERED BY WEBFORGE™ </div>
+
+    <div id="product-modal" class="product-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modal-image" src="" alt="Product Image">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <form id="product-form">
+                <div id="size-options">
+                    <!-- Radio buttons for size and price options will be generated here -->
+                </div>
+                <div class="quantity">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" min="1" value="1">
+                </div>
+                <button id="add-to-cart-btn" type="button" onclick="addToCartFromModal()" disabled>
+                    Add to Cart
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>

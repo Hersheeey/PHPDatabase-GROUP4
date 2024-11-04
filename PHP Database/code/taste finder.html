@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Finder - Taste Finder</title>
+    <link rel="stylesheet" href="taste finder.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="logo1.jpg" alt="Coffee Logo"> <!-- Add a coffee icon here -->
+                <h1>Caffeine Kick</h1>
+            </div>
+            <button class="reset-btn" id="reset-button">Reset</button> <!-- Replaced Change Info with Reset -->
+        </header>
+
+        <section class="taste-finder">
+            <h2>Taste Finder</h2>
+            <div class="slider-group">
+                <label for="sweetness">Sweetness</label>
+                <input type="range" id="sweetness" min="0" max="3" step="1">
+                <div class="tickmarks">
+                    <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+                </div>
+            </div>
+            <div class="slider-group">
+                <label for="bitterness">Bitterness</label>
+                <input type="range" id="bitterness" min="0" max="3" step="1">
+                <div class="tickmarks">
+                    <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+                </div>
+            </div>
+            <div class="slider-group">
+                <label for="creaminess">Creaminess</label>
+                <input type="range" id="creaminess" min="0" max="3" step="1">
+                <div class="tickmarks">
+                    <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+                </div>
+            </div>
+            <div class="slider-group">
+                <label for="boldness">Boldness</label>
+                <input type="range" id="boldness" min="0" max="3" step="1">
+                <div class="tickmarks">
+                    <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+                </div>
+            </div>
+            <div class="slider-group">
+                <label for="mildness">Mildness</label>
+                <input type="range" id="mildness" min="0" max="3" step="1">
+                <div class="tickmarks">
+                    <span>25%</span><span>50%</span><span>75%</span><span>100%</span>
+                </div>
+            </div>
+            <button class="find-coffee-btn">Find Coffee</button>
+        </section>
+    </div>
+
+    <script src="taste finder.js"></script>
+</body>
+</html>

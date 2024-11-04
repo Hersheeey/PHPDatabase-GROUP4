@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Caffeine Kick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf3e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signup-container {
+            width: 360px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .signup-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .inputBox {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .inputBox input {
+            width: 50%;
+            padding: 12px 40px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .inputBox .fas {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #34a853;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #2c8b45;
+        }
+
+        .signup-container p {
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .signup-container a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+
+        .signup-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Sign Up for Caffeine Kick</h2>
+        <form action="#" method="POST">
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Contact Number" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-lock"></span>
+                <input type="password" id="signup-password" placeholder="Password" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-lock"></span>
+                <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <input type="submit" value="Sign Up" class="btn">
+        </form>
+        <p>Already have an account? <a href="login.php">Log in</a></p>
+    </div>
+</body>
+</html>

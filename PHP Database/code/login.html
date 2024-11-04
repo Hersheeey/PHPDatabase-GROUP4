@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Caffeine Kick</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fdf3e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            width: 360px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .login-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #cd7f32;
+        }
+
+        .inputBox {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .inputBox input {
+            width: 50%;
+            padding: 12px 40px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .inputBox .fas {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background-color: rgb(110, 38, 14);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(136, 39, 7);
+        }
+
+        .login-container p {
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .login-container a {
+            color: #cd7f32;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Group 4</h2>
+        <form id="loginForm">
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Email or Username" required>
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-lock"></span>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <input type="submit" value="Login" class="btn">
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        <p><a href="#">Forgot Password?</a></p>
+    </div>
+
+    <script>
+        // Redirect to index.html on login
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = "home.html"; // Redirect to the index page
+        });
+    </script>
+</body>
+</html>
